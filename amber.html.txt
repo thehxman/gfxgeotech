@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gfxgeotech - Geotechnical Company</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    /* Slideshow styles */
+    .slideshow-container {
+      position: relative;
+      max-width: 100%;
+      overflow: hidden;
+    }
+    
+    .slideshow-container img {
+      width: 100%;
+      height: auto;
+    }
+    
+    /* Optional: Add animation styles for the slideshow */
+    .fade-in {
+      animation: fade 2s ease-in-out infinite;
+    }
+    
+    @keyframes fade {
+      0% { opacity: 0; }
+      25% { opacity: 1; }
+      75% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#news">News</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="slideshow-container">
+    <img class="fade-in" src="image1.jpg" alt="Slideshow Image 1">
+    <img class="fade-in" src="image2.jpg" alt="Slideshow Image 2">
+    <img class="fade-in" src="image3.jpg" alt="Slideshow Image 3">
+    <!-- Add more images as needed -->
+  </div>
+  
+  <section id="home">
+    <h1>Welcome to Gfxgeotech</h1>
+    <!-- Add a brief description or introduction -->
+  </section>
+  
+  <section id="services">
+    <h2>Our Services</h2>
+    <!-- List and describe the services your company offers -->
+  </section>
+  
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Owner: Amber Lecomte, P.Eng.</p>
+    <p>Location: Penticton, BC</p>
+    <p>Phone: 250.274.9500</p>
+    <p>Email: amber@gfxgeotech.ca</p>
+    <!-- Include your contact information, such as phone number, email, and address -->
+    <!-- You can also add a contact form for visitors to reach out to you -->
+  </section>
+  
+  <section id="projects">
+    <h2>Projects</h2>
+    <!-- Showcase your previous projects with images, descriptions, and details -->
+  </section>
+  
+  <section id="news">
+    <h2>News</h2>
+    <!-- Add news articles or updates about your company -->
+  </section>
+  
+  <footer>
+    <p>&copy; 2023 Gfxgeotech. All rights reserved.</p>
+  </footer>
+  
+  <script>
+    // JavaScript for slideshow
+    var images = document.querySelectorAll('.fade-in');
+    var index = 0;
+    
+    function changeImage() {
+      images[index].style.opacity = 0;
+      index = (index + 1) % images.length;
+      images[index].style.opacity
